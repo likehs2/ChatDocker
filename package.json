@@ -1,7 +1,7 @@
 {
   "name": "bkpsistemasdistribuidos---express",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repositório criado com o objetivo de explorar, aplicar e avaliar a plataforma Docker no contexto do desenvolvimento de um chat em tempo real durante a disciplina de Sistemas Distribuidos.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +13,6 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "path": "^0.12.7"
-  }
+  },
+  "devDependencies": {}
 }
