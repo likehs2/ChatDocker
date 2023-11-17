@@ -64,7 +64,7 @@ Rodando na porta 3000
 $ git clone https://github.com/likehs2/ChatDocker.git
 
 # Entre no repositório
-$ cd 
+$ cd ChatDocker 
 
 # Criação da imagem da aplicação contendo todos os métodos descritos no arquivo Dockerfile
 $ Docker build -t [nome da imagem] .
