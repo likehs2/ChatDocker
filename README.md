@@ -88,3 +88,16 @@ Rodando na porta 3000
 - [nodeJs](https://nodejs.org/en)
 - [Express](https://www.npmjs.com/package/express)
 - [Firebase](https://firebase.google.com/?hl=pt)
+
+
+### Propriedade de conexão por IP (A partir de um cliente) sem a necessidade da instalação do Docker
+
+A partir da comunicação de um cliente e um servidor pela mesma rede, é possível acessar a aplicação sem realizar a instalação do Docker Hub/Desktop em ambas as pontas.
+Por conta do protocolo HTTP utilizado pelo Express. É possível acessar via IP uma aplicação que está sendo rosteada por um servidor. Exemplificando:
+Possuímos dois computadores (X e Y), no contexto, o computador X é o servidor que está rodando a aplicação em cima do Docker. E o computador Y é o cliente.
+Para acessar a aplicação pelo computador X, basta digitar no navegador "http://localhost:3000/home" que já será carregado a aplicação.
+Para acessar a aplicação pelo computador Y, é necessário saber o IP ou DNS resolvido do servidor, "http://ip_do_servidor:3000/home" ou "http://hostname_do_servidor:3000/home"
+Isso é possível por conta da propriedade HTTP que existe nos métodos GET e POST do Node no Framework Express, como mostra na documentação do Framework abaixo:
+https://expressjs.com/pt-br/guide/routing.html
+"Métodos de roteamento
+Um método de roteamento é derivado a partir de um dos métodos HTTP, e é anexado a uma instância da classe express." - Documentação Express.
